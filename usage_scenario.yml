@@ -1,0 +1,58 @@
+---
+name: Test-alpha
+author: xiaoxuan
+version: 1
+description: Discover petri nets using alpha.
+
+services:
+  Test_alpha_Container:
+    image: python:3.9
+    build:
+      context: .    # 确保context路径正确，即使Dockerfile在项目的当前目录
+    volumes:
+      - .:/app      # 将当前目录挂载到容器的/app目录
+  Test_inductive_Container:
+    image: python:3.9
+    build:
+      context: .
+    volumes:
+      - .:/app
+  Test_heuristics_Container:
+    image: python:3.9
+    build:
+      context: .
+    volumes:
+      - .:/app
+  Test_ilp_Container:
+    image: python:3.9
+    build:
+      context: .
+    volumes:
+      - .:/app
+
+flow:
+  - name: Test alpha
+    container: Test_alpha_Container
+    commands:
+      - type: console
+        command: python /app/algorithm.py alpha
+        note: Running alpha
+  - name: Test inductive
+    container: Test_inductive_Container
+    commands:
+      - type: console
+        command: python /app/algorithm.py inductive
+        note: Running inductive
+  - name: Test heuristics
+    container: Test_heuristics_Container
+    commands:
+      - type: console
+        command: python /app/algorithm.py heuristics
+        note: Running heuristics
+  - name: Test ilp
+    container: Test_ilp_Container
+    commands:
+      - type: console
+        command: python /app/algorithm.py ilp
+        note: Running ilp
+
