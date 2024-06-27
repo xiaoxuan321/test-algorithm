@@ -5,135 +5,147 @@ import time
 import sys
 
 if __name__ == "__main__":
-    # 解压 BPIC12.xes.gz 文件
-    BPIC12_gz_file = 'BPIC12.xes.gz'
+    # # 解压 BPIC12.xes.gz 文件
+    # BPIC12_gz_file = 'BPIC12.xes.gz'
+    # BPIC12_output_file = 'BPIC12.xes'
+    #
+    # with gzip.open(BPIC12_gz_file, 'rb') as f_in:
+    #     with open(BPIC12_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{BPIC12_gz_file}' has been decompressed to '{BPIC12_output_file}'.")
+    #
+    # # 解压 BPIC13_cp.xes.gz 文件
+    # BPIC13_cp_gz_file = 'BPIC13_cp.xes.gz'
+    # BPIC13_cp_output_file = 'BPIC13_cp.xes'
+    #
+    # with gzip.open(BPIC13_cp_gz_file, 'rb') as f_in:
+    #     with open(BPIC13_cp_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{BPIC13_cp_gz_file}' has been decompressed to '{BPIC13_cp_output_file}'.")
+    #
+    # # 解压 BPIC13_i.xes.gz 文件
+    # BPIC13_i_gz_file = 'BPIC13_i.xes.gz'
+    # BPIC13_i_output_file = 'BPIC13_i.xes'
+    #
+    # with gzip.open(BPIC13_i_gz_file, 'rb') as f_in:
+    #     with open(BPIC13_i_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{BPIC13_i_gz_file}' has been decompressed to '{BPIC13_i_output_file}'.")
+    #
+    # # 解压 BPIC14_f.xes.gz 文件
+    # BPIC14_f_gz_file = 'BPIC14_f.xes.gz'
+    # BPIC14_f_output_file = 'BPIC14_f.xes'
+    #
+    # with gzip.open(BPIC14_f_gz_file, 'rb') as f_in:
+    #     with open(BPIC14_f_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{BPIC14_f_gz_file}' has been decompressed to '{BPIC14_f_output_file}'.")
+    #
+    # # 解压 BPIC15_1f.xes.gz 文件
+    # BPIC15_1f_gz_file = 'BPIC15_1f.xes.gz'
+    # BPIC15_1f_output_file = 'BPIC15_1f.xes'
+    #
+    # with gzip.open(BPIC15_1f_gz_file, 'rb') as f_in:
+    #     with open(BPIC15_1f_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{BPIC15_1f_gz_file}' has been decompressed to '{BPIC15_1f_output_file}'.")
+    # # 解压 BPIC15_1f.xes.gz 文件
+    # BPIC15_1f_gz_file = 'BPIC15_1f.xes.gz'
+    # BPIC15_1f_output_file = 'BPIC15_1f.xes'
+    #
+    # with gzip.open(BPIC15_1f_gz_file, 'rb') as f_in:
+    #     with open(BPIC15_1f_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{BPIC15_1f_gz_file}' has been decompressed to '{BPIC15_1f_output_file}'.")
+    #
+    # # 解压 BPIC15_2f.xes.gz 文件
+    # BPIC15_2f_gz_file = 'BPIC15_2f.xes.gz'
+    # BPIC15_2f_output_file = 'BPIC15_2f.xes'
+    #
+    # with gzip.open(BPIC15_2f_gz_file, 'rb') as f_in:
+    #     with open(BPIC15_2f_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{BPIC15_2f_gz_file}' has been decompressed to '{BPIC15_2f_output_file}'.")
+    #
+    # # 解压 BPIC15_3f.xes.gz 文件
+    # BPIC15_3f_gz_file = 'BPIC15_3f.xes.gz'
+    # BPIC15_3f_output_file = 'BPIC15_3f.xes'
+    #
+    # with gzip.open(BPIC15_3f_gz_file, 'rb') as f_in:
+    #     with open(BPIC15_3f_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{BPIC15_3f_gz_file}' has been decompressed to '{BPIC15_3f_output_file}'.")
+    #
+    # # 解压 BPIC15_4f.xes.gz 文件
+    # BPIC15_4f_gz_file = 'BPIC15_4f.xes.gz'
+    # BPIC15_4f_output_file = 'BPIC15_4f.xes'
+    #
+    # with gzip.open(BPIC15_4f_gz_file, 'rb') as f_in:
+    #     with open(BPIC15_4f_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{BPIC15_4f_gz_file}' has been decompressed to '{BPIC15_4f_output_file}'.")
+    #
+    # # 解压 BPIC15_5f.xes.gz 文件
+    # BPIC15_5f_gz_file = 'BPIC15_5f.xes.gz'
+    # BPIC15_5f_output_file = 'BPIC15_5f.xes'
+    #
+    # with gzip.open(BPIC15_5f_gz_file, 'rb') as f_in:
+    #     with open(BPIC15_5f_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{BPIC15_5f_gz_file}' has been decompressed to '{BPIC15_5f_output_file}'.")
+    #
+    # # 解压 BPIC17_f.xes.gz 文件
+    # BPIC17_f_gz_file = 'BPIC17_f.xes.gz'
+    # BPIC17_f_output_file = 'BPIC17_f.xes'
+    #
+    # with gzip.open(BPIC17_f_gz_file, 'rb') as f_in:
+    #     with open(BPIC17_f_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{BPIC17_f_gz_file}' has been decompressed to '{BPIC17_f_output_file}'.")
+    #
+    # # 解压 RTFMP.xes.gz 文件
+    # RTFMP_gz_file = 'RTFMP.xes.gz'
+    # RTFMP_output_file = 'RTFMP.xes'
+    #
+    # with gzip.open(RTFMP_gz_file, 'rb') as f_in:
+    #     with open(RTFMP_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{RTFMP_gz_file}' has been decompressed to '{RTFMP_output_file}'.")
+    #
+    # # 解压 SEPSIS.xes.gz 文件
+    # SEPSIS_gz_file = 'SEPSIS.xes.gz'
+    # SEPSIS_output_file = 'SEPSIS.xes'
+    #
+    # with gzip.open(SEPSIS_gz_file, 'rb') as f_in:
+    #     with open(SEPSIS_output_file, 'wb') as f_out:
+    #         shutil.copyfileobj(f_in, f_out)
+    #
+    # print(f"File '{SEPSIS_gz_file}' has been decompressed to '{SEPSIS_output_file}'.")
+
     BPIC12_output_file = 'BPIC12.xes'
-
-    with gzip.open(BPIC12_gz_file, 'rb') as f_in:
-        with open(BPIC12_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{BPIC12_gz_file}' has been decompressed to '{BPIC12_output_file}'.")
-
-    # 解压 BPIC13_cp.xes.gz 文件
-    BPIC13_cp_gz_file = 'BPIC13_cp.xes.gz'
     BPIC13_cp_output_file = 'BPIC13_cp.xes'
-
-    with gzip.open(BPIC13_cp_gz_file, 'rb') as f_in:
-        with open(BPIC13_cp_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{BPIC13_cp_gz_file}' has been decompressed to '{BPIC13_cp_output_file}'.")
-
-    # 解压 BPIC13_i.xes.gz 文件
-    BPIC13_i_gz_file = 'BPIC13_i.xes.gz'
     BPIC13_i_output_file = 'BPIC13_i.xes'
-
-    with gzip.open(BPIC13_i_gz_file, 'rb') as f_in:
-        with open(BPIC13_i_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{BPIC13_i_gz_file}' has been decompressed to '{BPIC13_i_output_file}'.")
-
-    # 解压 BPIC14_f.xes.gz 文件
-    BPIC14_f_gz_file = 'BPIC14_f.xes.gz'
     BPIC14_f_output_file = 'BPIC14_f.xes'
-
-    with gzip.open(BPIC14_f_gz_file, 'rb') as f_in:
-        with open(BPIC14_f_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{BPIC14_f_gz_file}' has been decompressed to '{BPIC14_f_output_file}'.")
-
-    # 解压 BPIC15_1f.xes.gz 文件
-    BPIC15_1f_gz_file = 'BPIC15_1f.xes.gz'
     BPIC15_1f_output_file = 'BPIC15_1f.xes'
-
-    with gzip.open(BPIC15_1f_gz_file, 'rb') as f_in:
-        with open(BPIC15_1f_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{BPIC15_1f_gz_file}' has been decompressed to '{BPIC15_1f_output_file}'.")
-    # 解压 BPIC15_1f.xes.gz 文件
-    BPIC15_1f_gz_file = 'BPIC15_1f.xes.gz'
-    BPIC15_1f_output_file = 'BPIC15_1f.xes'
-
-    with gzip.open(BPIC15_1f_gz_file, 'rb') as f_in:
-        with open(BPIC15_1f_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{BPIC15_1f_gz_file}' has been decompressed to '{BPIC15_1f_output_file}'.")
-
-    # 解压 BPIC15_2f.xes.gz 文件
-    BPIC15_2f_gz_file = 'BPIC15_2f.xes.gz'
     BPIC15_2f_output_file = 'BPIC15_2f.xes'
-
-    with gzip.open(BPIC15_2f_gz_file, 'rb') as f_in:
-        with open(BPIC15_2f_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{BPIC15_2f_gz_file}' has been decompressed to '{BPIC15_2f_output_file}'.")
-
-    # 解压 BPIC15_3f.xes.gz 文件
-    BPIC15_3f_gz_file = 'BPIC15_3f.xes.gz'
     BPIC15_3f_output_file = 'BPIC15_3f.xes'
-
-    with gzip.open(BPIC15_3f_gz_file, 'rb') as f_in:
-        with open(BPIC15_3f_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{BPIC15_3f_gz_file}' has been decompressed to '{BPIC15_3f_output_file}'.")
-
-    # 解压 BPIC15_4f.xes.gz 文件
-    BPIC15_4f_gz_file = 'BPIC15_4f.xes.gz'
     BPIC15_4f_output_file = 'BPIC15_4f.xes'
-
-    with gzip.open(BPIC15_4f_gz_file, 'rb') as f_in:
-        with open(BPIC15_4f_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{BPIC15_4f_gz_file}' has been decompressed to '{BPIC15_4f_output_file}'.")
-
-    # 解压 BPIC15_5f.xes.gz 文件
-    BPIC15_5f_gz_file = 'BPIC15_5f.xes.gz'
     BPIC15_5f_output_file = 'BPIC15_5f.xes'
-
-    with gzip.open(BPIC15_5f_gz_file, 'rb') as f_in:
-        with open(BPIC15_5f_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{BPIC15_5f_gz_file}' has been decompressed to '{BPIC15_5f_output_file}'.")
-
-    # 解压 BPIC17_f.xes.gz 文件
-    BPIC17_f_gz_file = 'BPIC17_f.xes.gz'
     BPIC17_f_output_file = 'BPIC17_f.xes'
-
-    with gzip.open(BPIC17_f_gz_file, 'rb') as f_in:
-        with open(BPIC17_f_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{BPIC17_f_gz_file}' has been decompressed to '{BPIC17_f_output_file}'.")
-
-    # 解压 RTFMP.xes.gz 文件
-    RTFMP_gz_file = 'RTFMP.xes.gz'
     RTFMP_output_file = 'RTFMP.xes'
-
-    with gzip.open(RTFMP_gz_file, 'rb') as f_in:
-        with open(RTFMP_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{RTFMP_gz_file}' has been decompressed to '{RTFMP_output_file}'.")
-
-    # 解压 SEPSIS.xes.gz 文件
-    SEPSIS_gz_file = 'SEPSIS.xes.gz'
     SEPSIS_output_file = 'SEPSIS.xes'
-
-    with gzip.open(SEPSIS_gz_file, 'rb') as f_in:
-        with open(SEPSIS_output_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-    print(f"File '{SEPSIS_gz_file}' has been decompressed to '{SEPSIS_output_file}'.")
-
     # 加载解压后的 .xes 文件
     BPIC12 = pm4py.read_xes(BPIC12_output_file)
     BPIC13_cp = pm4py.read_xes(BPIC13_cp_output_file)
