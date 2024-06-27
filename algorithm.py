@@ -4,6 +4,13 @@ import pm4py
 import time
 import sys
 
+# 检查文件是否存在
+def check_file_exists(file_path):
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"The file {file_path} does not exist")
+    else:
+        print(f"Found file: {file_path}")
+
 if __name__ == "__main__":
     # # 解压 BPIC12.xes.gz 文件
     # BPIC12_gz_file = 'BPIC12.xes.gz'
@@ -146,6 +153,22 @@ if __name__ == "__main__":
     BPIC17_f_output_file = '/app/data/BPIC17_f.xes'
     RTFMP_output_file = '/app/data/RTFMP.xes'
     SEPSIS_output_file = '/app/data/SEPSIS.xes'
+    try:
+    check_file_exists(BPIC12_output_file)
+    check_file_exists(BPIC13_cp_output_file)
+    check_file_exists(BPIC13_i_output_file)
+    check_file_exists(BPIC14_f_output_file)
+    check_file_exists(BPIC15_1f_output_file)
+    check_file_exists(BPIC15_2f_output_file)
+    check_file_exists(BPIC15_3f_output_file)
+    check_file_exists(BPIC15_4f_output_file)
+    check_file_exists(BPIC15_5f_output_file)
+    check_file_exists(RTFMP_output_file)
+    check_file_exists(SEPSIS_output_file)
+    check_file_exists(BPIC17_f_output_file)
+except FileNotFoundError as e:
+    print(e)
+    raise
     # 加载解压后的 .xes 文件
     BPIC12 = pm4py.read_xes(BPIC12_output_file)
     BPIC13_cp = pm4py.read_xes(BPIC13_cp_output_file)
