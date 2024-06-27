@@ -5,10 +5,10 @@ FROM python:3.9
 WORKDIR /app
 
 # 确保所需目录存在
-RUN mkdir -p /app/data/data
+RUN mkdir -p /app/data
 
 # 复制当前目录下的所有文件到容器的/app 目录
-COPY . /app/data/data
+COPY . /app/data
 
 # 安装所需依赖
 RUN apt-get update && apt-get install -y gzip \
