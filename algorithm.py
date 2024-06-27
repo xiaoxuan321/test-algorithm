@@ -154,21 +154,20 @@ if __name__ == "__main__":
     RTFMP_output_file = '/app/data/RTFMP.xes'
     SEPSIS_output_file = '/app/data/SEPSIS.xes'
     try:
-    check_file_exists(BPIC12_output_file)
-    check_file_exists(BPIC13_cp_output_file)
-    check_file_exists(BPIC13_i_output_file)
-    check_file_exists(BPIC14_f_output_file)
-    check_file_exists(BPIC15_1f_output_file)
-    check_file_exists(BPIC15_2f_output_file)
-    check_file_exists(BPIC15_3f_output_file)
-    check_file_exists(BPIC15_4f_output_file)
-    check_file_exists(BPIC15_5f_output_file)
-    check_file_exists(RTFMP_output_file)
-    check_file_exists(SEPSIS_output_file)
-    check_file_exists(BPIC17_f_output_file)
-except FileNotFoundError as e:
-    print(e)
-    raise
+        check_file_exists(BPIC12_output_file)
+        check_file_exists(BPIC13_cp_output_file)
+        check_file_exists(BPIC13_i_output_file)
+        check_file_exists(BPIC14_f_output_file)
+        check_file_exists(BPIC15_1f_output_file)
+        check_file_exists(BPIC15_2f_output_file)
+        check_file_exists(BPIC15_3f_output_file)
+        check_file_exists(BPIC15_4f_output_file)
+        check_file_exists(BPIC15_5f_output_file)
+        check_file_exists(RTFMP_output_file)
+        check_file_exists(SEPSIS_output_file)
+        check_file_exists(BPIC17_f_output_file)
+    except FileNotFoundError as e:
+        print(e)
     # 加载解压后的 .xes 文件
     BPIC12 = pm4py.read_xes(BPIC12_output_file)
     BPIC13_cp = pm4py.read_xes(BPIC13_cp_output_file)
