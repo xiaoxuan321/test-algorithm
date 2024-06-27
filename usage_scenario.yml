@@ -35,24 +35,24 @@ flow:
     container: Test_alpha_Container
     commands:
       - type: console
-        command: python /app/algorithm.py alpha
+        command: python /app/data/algorithm.py alpha
         note: Running alpha
   - name: Test inductive
     container: Test_inductive_Container
     commands:
       - type: console
-        command: python /app/algorithm.py inductive
+        command: python /app/data/algorithm.py inductive
         note: Running inductive
   - name: Test heuristics
     container: Test_heuristics_Container
     commands:
       - type: console
-        command: python /app/algorithm.py heuristics
+        command: python /app/data/algorithm.py heuristics
         note: Running heuristics
   - name: Test ilp
     container: Test_ilp_Container
     commands:
       - type: console
-        command: python /app/algorithm.py ilp
+        command: python /app/data/algorithm.py ilp
         note: Running ilp
 

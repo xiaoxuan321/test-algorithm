@@ -134,18 +134,18 @@ if __name__ == "__main__":
     #
     # print(f"File '{SEPSIS_gz_file}' has been decompressed to '{SEPSIS_output_file}'.")
 
-    BPIC12_output_file = '/app/BPIC12.xes'
-    BPIC13_cp_output_file = '/app/BPIC13_cp.xes'
-    BPIC13_i_output_file = '/app/BPIC13_i.xes'
-    BPIC14_f_output_file = '/app/BPIC14_f.xes'
-    BPIC15_1f_output_file = '/app/BPIC15_1f.xes'
-    BPIC15_2f_output_file = '/app/BPIC15_2f.xes'
-    BPIC15_3f_output_file = '/app/BPIC15_3f.xes'
-    BPIC15_4f_output_file = '/app/BPIC15_4f.xes'
-    BPIC15_5f_output_file = '/app/BPIC15_5f.xes'
-    BPIC17_f_output_file = '/app/BPIC17_f.xes'
-    RTFMP_output_file = '/app/RTFMP.xes'
-    SEPSIS_output_file = '/app/SEPSIS.xes'
+    BPIC12_output_file = '/app/data/BPIC12.xes'
+    BPIC13_cp_output_file = '/app/data/BPIC13_cp.xes'
+    BPIC13_i_output_file = '/app/data/BPIC13_i.xes'
+    BPIC14_f_output_file = '/app/data/BPIC14_f.xes'
+    BPIC15_1f_output_file = '/app/data/BPIC15_1f.xes'
+    BPIC15_2f_output_file = '/app/data/BPIC15_2f.xes'
+    BPIC15_3f_output_file = '/app/data/BPIC15_3f.xes'
+    BPIC15_4f_output_file = '/app/data/BPIC15_4f.xes'
+    BPIC15_5f_output_file = '/app/data/BPIC15_5f.xes'
+    BPIC17_f_output_file = '/app/data/BPIC17_f.xes'
+    RTFMP_output_file = '/app/data/RTFMP.xes'
+    SEPSIS_output_file = '/app/data/SEPSIS.xes'
     # 加载解压后的 .xes 文件
     BPIC12 = pm4py.read_xes(BPIC12_output_file)
     BPIC13_cp = pm4py.read_xes(BPIC13_cp_output_file)
