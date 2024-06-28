@@ -36,7 +36,5 @@ RUN apt-get update && \
     gzip -d /app/data/BPIC17_f.xes.gz && \
     gzip -d /app/data/RTFMP.xes.gz && \
     gzip -d /app/data/SEPSIS.xes.gz && \
-    ls -la /app && ls -la /app/data \
-
-# 安装所需依赖
-RUN pip install pm4py
+    ls -la /app && ls -la /app/data &&\
+    pip install pm4py
