@@ -22,8 +22,6 @@ COPY RTFMP.xes.gz /app/data/RTFMP.xes.gz
 COPY SEPSIS.xes.gz /app/data/SEPSIS.xes.gz
 COPY algorithm.py /app/algorithm.py
 
-COPY algorithm.py /app/algorithm.py
-
 # 安装所需依赖
 RUN apt-get update && apt-get install -y gzip \
     && pip install pm4py pandas

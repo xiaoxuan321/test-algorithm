@@ -1,5 +1,6 @@
 import gzip
 import shutil
+import os
 import pm4py
 import time
 import sys
