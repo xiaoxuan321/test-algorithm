@@ -1,5 +1,5 @@
 ---
-name: Test-alpha
+name: Test-algorithm
 author: xiaoxuan
 version: 1
 description: Discover petri nets using alpha.
@@ -10,25 +10,25 @@ services:
     build:
       context: .    # 确保context路径正确，即使Dockerfile在项目的当前目录
     volumes:
-      - .:/app      # 将当前目录挂载到容器的/app目录
+      - ./data:/app/data      # 将当前目录挂载到容器的/app目录
   Test_inductive_Container:
     image: python:3.9
     build:
       context: .
     volumes:
-      - .:/app
+      - ./data:/app/data
   Test_heuristics_Container:
     image: python:3.9
     build:
       context: .
     volumes:
-      - .:/app
+      - ./data:/app/data
   Test_ilp_Container:
     image: python:3.9
     build:
       context: .
     volumes:
-      - .:/app
+      - ./data:/app/data
 
 flow:
   - name: Test alpha

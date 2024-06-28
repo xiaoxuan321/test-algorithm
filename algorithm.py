@@ -169,6 +169,7 @@ if __name__ == "__main__":
         check_file_exists(BPIC17_f_output_file)
     except FileNotFoundError as e:
         print(e)
+        sys.exit(1)
     # 加载解压后的 .xes 文件
     BPIC12 = pm4py.read_xes(BPIC12_output_file)
     BPIC13_cp = pm4py.read_xes(BPIC13_cp_output_file)
