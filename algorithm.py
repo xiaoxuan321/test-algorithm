@@ -91,7 +91,59 @@ if __name__ == "__main__":
 
             end = time.perf_counter()
             print("Alpha Miner耗时: " + str(end - start) + "秒")
+        elif param == "alphaPlus":
+            # inductive Miner
+            start = time.perf_counter()
+            net, im, fm = pm4py.discover_petri_net_alpha_plus(BPIC12, activity_key='concept:name',
+                                                             case_id_key='case:concept:name',
+                                                             timestamp_key='time:timestamp')
 
+            net, im, fm = pm4py.discover_petri_net_alpha_plus(BPIC13_cp, activity_key='concept:name',
+                                                             case_id_key='case:concept:name',
+                                                             timestamp_key='time:timestamp')
+
+            net, im, fm = pm4py.discover_petri_net_alpha_plus(BPIC13_i, activity_key='concept:name',
+                                                             case_id_key='case:concept:name',
+                                                             timestamp_key='time:timestamp')
+
+            net, im, fm = pm4py.discover_petri_net_alpha_pluse(BPIC14_f, activity_key='concept:name',
+                                                             case_id_key='case:concept:name',
+                                                             timestamp_key='time:timestamp')
+
+            net, im, fm = pm4py.discover_petri_net_alpha_plus(BPIC15_1f, activity_key='concept:name',
+                                                             case_id_key='case:concept:name',
+                                                             timestamp_key='time:timestamp')
+
+            net, im, fm = pm4py.discover_petri_net_alpha_plus(BPIC15_2f, activity_key='concept:name',
+                                                             case_id_key='case:concept:name',
+                                                             timestamp_key='time:timestamp')
+
+            net, im, fm = pm4py.discover_petri_net_alpha_plus(BPIC15_3f, activity_key='concept:name',
+                                                             case_id_key='case:concept:name',
+                                                             timestamp_key='time:timestamp')
+
+            net, im, fm = pm4py.discover_petri_net_alpha_plus(BPIC15_4f, activity_key='concept:name',
+                                                             case_id_key='case:concept:name',
+                                                             timestamp_key='time:timestamp')
+
+            net, im, fm = pm4py.discover_petri_net_alpha_plus(BPIC15_5f, activity_key='concept:name',
+                                                             case_id_key='case:concept:name',
+                                                             timestamp_key='time:timestamp')
+
+            net, im, fm = pm4py.discover_petri_net_alpha_pluse(BPIC17_f, activity_key='concept:name',
+                                                             case_id_key='case:concept:name',
+                                                             timestamp_key='time:timestamp')
+
+            net, im, fm = pm4py.discover_petri_net_alpha_plus(RTFMP, activity_key='concept:name',
+                                                             case_id_key='case:concept:name',
+                                                             timestamp_key='time:timestamp')
+
+            net, im, fm = pm4py.discover_petri_alpha_plus(SEPSIS, activity_key='concept:name',
+                                                             case_id_key='case:concept:name',
+                                                             timestamp_key='time:timestamp')
+
+            end = time.perf_counter()
+            print("alpha plus Miner耗时: " + str(end - start) + "秒")
         elif param == "inductive":
             # inductive Miner
             start = time.perf_counter()
