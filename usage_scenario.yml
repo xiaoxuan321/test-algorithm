@@ -6,19 +6,15 @@ description: Discover petri nets using alpha.
 
 services:
   Test_alpha_Container:
-    image: python:3.9
     build:
       context: .    # 确保context路径正确，即使Dockerfile在项目的当前目录
   Test_inductive_Container:
-    image: python:3.9
     build:
       context: .
   Test_heuristics_Container:
-    image: python:3.9
     build:
       context: .
   Test_ilp_Container:
-    image: python:3.9
     build:
       context: .
 
