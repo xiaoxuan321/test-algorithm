@@ -106,7 +106,7 @@ if __name__ == "__main__":
                                                              case_id_key='case:concept:name',
                                                              timestamp_key='time:timestamp')
 
-            net, im, fm = pm4py.discover_petri_net_alpha_pluse(BPIC14_f, activity_key='concept:name',
+            net, im, fm = pm4py.discover_petri_net_alpha_plus(BPIC14_f, activity_key='concept:name',
                                                              case_id_key='case:concept:name',
                                                              timestamp_key='time:timestamp')
 
@@ -130,7 +130,7 @@ if __name__ == "__main__":
                                                              case_id_key='case:concept:name',
                                                              timestamp_key='time:timestamp')
 
-            net, im, fm = pm4py.discover_petri_net_alpha_pluse(BPIC17_f, activity_key='concept:name',
+            net, im, fm = pm4py.discover_petri_net_alpha_plus(BPIC17_f, activity_key='concept:name',
                                                              case_id_key='case:concept:name',
                                                              timestamp_key='time:timestamp')
 
