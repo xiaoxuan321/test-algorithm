@@ -29,12 +29,6 @@ flow:
       - type: console
         command: python /app/algorithm.py alpha
         note: Running alpha
-  - name: Test alphaPlus
-    container: Test_alpha_plus_Container
-    commands:
-      - type: console
-        command: python /app/algorithm.py alphaPlus
-        note: Running alpha plus
   - name: Test inductive
     container: Test_inductive_Container
     commands:
