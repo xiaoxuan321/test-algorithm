@@ -2,7 +2,7 @@
 name: Test-algorithm
 author: xiaoxuan
 version: 1
-description: Discover petri nets using alpha.
+description: Discover petri nets using algorithm.
 
 services:
   Test_alpha_Container:
